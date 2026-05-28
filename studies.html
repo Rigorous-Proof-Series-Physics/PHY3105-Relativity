@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>rigorous-proof-series-physics/PHY3105-Relativity — Estudos</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./css/paleta_cores.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/nav_bar.css" />
+    <link rel="stylesheet" href="./css/pages.css" />
+    <link rel="stylesheet" href="./css/studies.css" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X39S935KBW"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-X39S935KBW');
+</script>
+
+<body>
+    <header class="navbar">
+        <div class="wrap">
+            <!-- Link extra à esquerda -->
+            <a class="repo-link" href="https://rigorous-proof-series-physics.github.io?utm_source=child_repo&utm_medium=navbar&utm_campaign=studies"
+                title="Repositório Central">⚛</a>
+
+            <div class="brand"><a href="./index.html">Homepage</a></div>
+            <nav class="nav">
+                <a href="./references.html">References</a>
+                <a href="./studies.html">Studies</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="main-wide">
+        <div class="layout" id="studiesLayout">
+            <aside class="sidebar">
+                <input id="q" class="search" placeholder="Filter notebooks..." />
+                <ul id="tree" class="tree"></ul>
+            </aside>
+            <section class="viewer">
+                <iframe id="viewer" src=""></iframe>
+            </section>
+            <aside class="notebook-tools">
+                <button id="btnFullscreen" title="Expand view">⛶</button>
+                <button id="btnToggleSidebar" title="Toggle sidebar">⇆</button>
+                <button id="btnCollapseCells" class="proof-only" title="Collapse all cells">−</button>
+                <button id="btnExpandCells" class="proof-only" title="Expand all cells">+</button>
+            </aside>
+        </div>
+    </main>
+
+    <!-- injeta a árvore apenas nesta página -->
+    <script>
+        window.TREE_DATA = {"type": "dir", "name": "src", "path": "", "children": [{"type": "dir", "name": "Foundations", "path": "Foundations", "children": [{"type": "file", "name": "Riemmanian-tensor.ipynb", "path": "Foundations/Riemmanian-tensor.ipynb", "nb_html": "Foundations/Riemmanian-tensor.html"}]}]};
+    </script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
